@@ -1,0 +1,74 @@
+/* Header.css */
+
+/* Navbar styles */
+header {
+  margin-bottom: 20px;
+}
+
+.navbar {
+  padding: 10px;
+  background-color: #333; 
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color:#fff;
+
+}
+
+.navbar-toggler {
+  border: none;
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background-color: #fff;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 10px;
+  list-style: none; /* Remove bullet mark */
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1rem;
+  
+}
+
+.btn {
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #007bff; 
+}
+
+
+.navbar-nav.ml-auto {
+  display: flex;
+  align-items: center;
+}
+
+.display-right{
+    margin-left: 50px;
+}
+
+.login-register {
+  margin-left: 350px;
+  
+}
+
+

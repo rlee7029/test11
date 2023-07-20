@@ -1,0 +1,79 @@
+/* TaskList.css */
+
+.task-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .task-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f8f9fa; /* Update with your preferred background color */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .task-card h3 {
+    margin-top: 0;
+  }
+  
+  .task-card p {
+    margin-bottom: 10px;
+  }
+  
+  .task-card .task-status {
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  .task-card .completed {
+    color: green;
+  }
+  
+  .task-card .incomplete {
+    color: orange;
+  }
+  
+  .task-card .task-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+  
+  .task-card .btn {
+    flex: 1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .task-card .btn-primary {
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    margin-right: 5px;
+    min-width: 0; 
+padding: 10px;  
+}
+  
+  .task-card .btn-danger {
+    background-color: #dc3545; 
+    color: #fff;
+    border: none;
+    margin-left: 5px;
+    min-width: 0; 
+  }
+  
+  .task-card .btn:hover {
+    opacity: 0.7;
+  }
+  
+  .task-card .btn:focus {
+    outline: none;
+  }
+  
+ 
+  
