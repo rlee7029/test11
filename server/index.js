@@ -12,6 +12,7 @@ const jwt = require('jsonwebtoken');
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const crypto = require('crypto');
 const cors = require('cors');
+const path = require('path')
 
 require('dotenv').config();
 
