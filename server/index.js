@@ -45,12 +45,22 @@ const server = new ApolloServer({
     }
   },
 });
+// Serve static files from the 'build' folder
+app.use(express.static(path.join(__dirname, 'client/build')));
+
+// Your other Express routes go here
 
 app.use(cors());
 app.use((req, res, next) => {
   res.set('Content-Security-Policy', `script-src 'self' 'nonce-${nonce}'`);
   next();
 });
+
+// Catch-all route for React app
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client/build/index.html'));
+});
+
 
 // Define route for creating a PaymentIntent
 app.post('/api/create-checkout-session', async (req, res) => {
