@@ -8,5 +8,10 @@
   
 "engines": {
   "node": "v18.14.2"
+},
+"scripts": {
+
+  "start": "node server/index.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
 }
 }
