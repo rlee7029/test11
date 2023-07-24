@@ -15,6 +15,11 @@ const cors = require('cors');
 const path = require('path')
 
 require('dotenv').config();
+process.env.MONGODB_URI;
+process.env.JWT_SECRET;
+process.env.STRIPE_SECRET_KEY;
+process.env.PORT;
+
 
 connectDB();
 
