@@ -15,23 +15,10 @@ const cors = require('cors');
 const path = require('path')
 
 require('dotenv').config();
-const mongoose = require('mongoose');
-console.log (process.env.MONGODB_URI)
-const connectDB = async () => {
-  try {
-    await mongoose.connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-     
-    });
-    console.log('Connected to the database');
-  } catch (error) {
-    console.error('Failed to connect to the database:', error.message);
-    process.exit(1);
-  }
-};
-
-module.exports = connectDB;
+process.env.MONGODB_URI;
+process.env.JWT_SECRET;
+process.env.STRIPE_SECRET_KEY;
+process.env.PORT;
 
 
 connectDB();
