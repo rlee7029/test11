@@ -57,10 +57,9 @@ app.use((req, res, next) => {
 });
 
 // Catch-all route for React app
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'client/build/index.html'));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
-
 
 // Define route for creating a PaymentIntent
 app.post('/api/create-checkout-session', async (req, res) => {
