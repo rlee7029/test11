@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const { ApolloServer } = require('apollo-server-express');
 const mongoose = require('mongoose');
@@ -13,13 +14,6 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const crypto = require('crypto');
 const cors = require('cors');
 const path = require('path')
-
-require('dotenv').config();
-process.env.MONGODB_URI;
-process.env.JWT_SECRET;
-process.env.STRIPE_SECRET_KEY;
-process.env.PORT;
-
 
 connectDB();
 
