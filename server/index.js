@@ -46,7 +46,7 @@ const server = new ApolloServer({
   },
 });
 // Serve static files from the 'build' folder
-app.use(express.static(path.join(__dirname, 'client/build')));
+app.use(express.static(path.join(__dirname, '../client/build')));
 
 // Your other Express routes go here
 
