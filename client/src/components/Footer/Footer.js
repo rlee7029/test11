@@ -6,7 +6,7 @@ const Footer = () => {
 
   const handleDonation = async () => {
     setLoading(true);
-    const stripe = await loadStripe(process.env.STRIPE_PK);
+    const stripe = await loadStripe(process.env.STRIPE_SECREY_KEY);
 
     try {
       // Make a request to your backend server endpoint to create a PaymentIntent
